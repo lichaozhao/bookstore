@@ -1,0 +1,13 @@
+FROM mcr.microsoft.com/playwright:v1.59.1-noble
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+COPY backend/package.json ./backend/package.json
+COPY frontend/package.json ./frontend/package.json
+RUN npm ci
+
+COPY frontend ./frontend
+COPY run-e2e.sh ./run-e2e.sh
+
+RUN chmod +x run-e2e.sh

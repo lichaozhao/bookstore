@@ -1,0 +1,36 @@
+[
+  {
+    "username": "sandra",
+    "password": "sandra",
+    "favorites": [
+      "1",
+      "2",
+      "7",
+      "15",
+      "9",
+      "6",
+      "5",
+      "16",
+      "14",
+      "20",
+      "21",
+      "3"
+    ]
+  },
+  {
+    "username": "lichaozhao",
+    "password": "1234567",
+    "favorites": [
+      "2",
+      "3",
+      "1",
+      "5"
+    ]
+  },
+  {
+    "username": "testuser",
+    "password": "testpass",
+    "favorites": []
+  }
+  
+]

@@ -1,0 +1,29 @@
+{
+  "name": "demo-exercise",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "start:backend": "npm run start --workspace backend",
+    "start:frontend": "npm run dev --workspace frontend",
+    "lint:backend": "npm run lint --workspace backend",
+    "lint:frontend": "npm run lint --workspace frontend",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "type-check:backend": "npm run type-check --workspace backend",
+    "type-check:frontend": "npm run type-check --workspace frontend",
+    "type-check": "npm run type-check:backend && npm run type-check:frontend",
+    "build:backend": "npm run build --workspace backend",
+    "build:frontend": "npm run build --workspace frontend",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test:backend": "npm run test --workspace backend",
+    "test:frontend": "bash run-e2e.sh",
+    "test": "npm run test:backend && npm run test:frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

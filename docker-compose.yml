@@ -1,0 +1,60 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: dockerfile-backend
+    environment:
+      PORT: 4000
+      TEST_MODE: '1'
+    ports:
+      - '${BACKEND_HOST_PORT:-4000}:4000'
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          node -e "fetch('http://127.0.0.1:4000/api/books').then((response) => process.exit(response.ok ? 0 : 1)).catch(() => process.exit(1))"
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 5s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: dockerfile-frontend
+    environment:
+      PORT: 5173
+      VITE_API_PROXY_TARGET: http://backend:4000
+    ports:
+      - '${FRONTEND_HOST_PORT:-5173}:5173'
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          wget -q -O /dev/null http://127.0.0.1:5173/
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 5s
+
+  test:
+    build:
+      context: .
+      dockerfile: dockerfile-test
+    entrypoint: []
+    command: ["bash", "./run-e2e.sh"]
+    environment:
+      BACKEND_HEALTH_URL: http://backend:4000/api/books
+      PLAYWRIGHT_BASE_URL: http://frontend:5173
+      E2E_USE_EXTERNAL_SERVICES: '1'
+      E2E_LOG_FILE: /test-results/e2e-test.log
+    volumes:
+      - .:/test-results
+    depends_on:
+      backend:
+        condition: service_healthy
+      frontend:
+        condition: service_healthy

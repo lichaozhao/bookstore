@@ -1,0 +1,7 @@
+node_modules
+docs/archive
+docs/status.md
+backend/dist
+*.tsbuildinfo
+logs
+e2e-test.log

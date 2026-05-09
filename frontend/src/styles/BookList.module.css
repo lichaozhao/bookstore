@@ -1,0 +1,135 @@
+.bookCardWithHeart {
+  position: relative;
+}
+.favoriteHeart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 6px #e2555540);
+}
+.favoriteHeart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 6px #e2555540);
+}
+.simpleBtn {
+  background: #20b2aa;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.simpleBtn:hover {
+  background: #178d8d;
+}
+.heartBtn:focus,
+.heartBtn:focus-visible,
+.heartBtn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+}
+.heartBtn::-moz-focus-inner {
+  border: 0;
+}
+.heartBtn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+.heartBtn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+.bookGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.bookCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 140px;
+  transition: box-shadow 0.2s;
+}
+
+.bookCard:hover {
+  box-shadow: 0 4px 16px rgba(32,178,170,0.15);
+}
+
+.bookTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #20b2aa;
+}
+
+.bookAuthor {
+  font-size: 0.98rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.heartBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  align-self: flex-end;
+  transition: transform 0.15s;
+  outline: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+}
+.heartBtn svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  transition: fill 0.2s, stroke 0.2s;
+  margin: 0;
+}
+.heartBtn[aria-pressed="true"] svg {
+  fill: #e25555;
+  stroke: #e25555;
+}
+.heartBtn[aria-pressed="false"] svg {
+  fill: none;
+  stroke: #bbb;
+}
+.heartBtn:hover svg {
+  filter: drop-shadow(0 2px 6px #e2555540);
+  stroke: #e25555;
+}
+.heartBtn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}

@@ -1,0 +1,30 @@
+FROM node:20-bookworm-slim AS builder
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+COPY backend/package.json ./backend/package.json
+COPY frontend/package.json ./frontend/package.json
+RUN npm ci
+
+COPY backend ./backend
+
+RUN npm run build:backend
+
+FROM node:20-bookworm-slim
+
+ENV NODE_ENV=production
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+COPY backend/package.json ./backend/package.json
+COPY frontend/package.json ./frontend/package.json
+RUN npm ci --omit=dev --workspace backend --include-workspace-root=false
+
+COPY --from=builder /app/backend/dist ./backend/dist
+COPY backend/data ./backend/data
+
+EXPOSE 4000
+
+CMD ["node", "backend/dist/server.js"]

@@ -1,0 +1,11 @@
+{
+	"hooks": {
+		"SessionStart": [
+			{
+				"type": "command",
+				"command": "bash .github/hooks/archive-status.sh",
+				"timeout": 15
+			}
+		]
+	}
+}

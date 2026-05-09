@@ -1,0 +1,257 @@
+[
+  {
+    "id": "1",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee"
+  },
+  {
+    "id": "2",
+    "title": "1984",
+    "author": "George Orwell"
+  },
+  {
+    "id": "3",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen"
+  },
+  {
+    "id": "4",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald"
+  },
+  {
+    "id": "5",
+    "title": "Moby-Dick",
+    "author": "Herman Melville"
+  },
+  {
+    "id": "6",
+    "title": "War and Peace",
+    "author": "Leo Tolstoy"
+  },
+  {
+    "id": "7",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger"
+  },
+  {
+    "id": "8",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "id": "9",
+    "title": "Brave New World",
+    "author": "Aldous Huxley"
+  },
+  {
+    "id": "10",
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky"
+  },
+  {
+    "id": "11",
+    "title": "The Odyssey",
+    "author": "Homer"
+  },
+  {
+    "id": "12",
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky"
+  },
+  {
+    "id": "13",
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë"
+  },
+  {
+    "id": "14",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë"
+  },
+  {
+    "id": "15",
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri"
+  },
+  {
+    "id": "16",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien"
+  },
+  {
+    "id": "17",
+    "title": "Great Expectations",
+    "author": "Charles Dickens"
+  },
+  {
+    "id": "18",
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy"
+  },
+  {
+    "id": "19",
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes"
+  },
+  {
+    "id": "20",
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck"
+  },
+  {
+    "id": "21",
+    "title": "Ulysses",
+    "author": "James Joyce"
+  },
+  {
+    "id": "22",
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert"
+  },
+  {
+    "id": "23",
+    "title": "The Iliad",
+    "author": "Homer"
+  },
+  {
+    "id": "24",
+    "title": "Les Misérables",
+    "author": "Victor Hugo"
+  },
+  {
+    "id": "25",
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens"
+  },
+  {
+    "id": "26",
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury"
+  },
+  {
+    "id": "27",
+    "title": "Dracula",
+    "author": "Bram Stoker"
+  },
+  {
+    "id": "28",
+    "title": "Frankenstein",
+    "author": "Mary Shelley"
+  },
+  {
+    "id": "29",
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway"
+  },
+  {
+    "id": "30",
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde"
+  },
+  {
+    "id": "31",
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas"
+  },
+  {
+    "id": "32",
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway"
+  },
+  {
+    "id": "33",
+    "title": "Lolita",
+    "author": "Vladimir Nabokov"
+  },
+  {
+    "id": "34",
+    "title": "Catch-22",
+    "author": "Joseph Heller"
+  },
+  {
+    "id": "35",
+    "title": "The Stranger",
+    "author": "Albert Camus"
+  },
+  {
+    "id": "36",
+    "title": "Rebecca",
+    "author": "Daphne du Maurier"
+  },
+  {
+    "id": "37",
+    "title": "The Sound and the Fury",
+    "author": "William Faulkner"
+  },
+  {
+    "id": "38",
+    "title": "David Copperfield",
+    "author": "Charles Dickens"
+  },
+  {
+    "id": "39",
+    "title": "Gone with the Wind",
+    "author": "Margaret Mitchell"
+  },
+  {
+    "id": "40",
+    "title": "The Scarlet Letter",
+    "author": "Nathaniel Hawthorne"
+  },
+  {
+    "id": "41",
+    "title": "Persuasion",
+    "author": "Jane Austen"
+  },
+  {
+    "id": "42",
+    "title": "Emma",
+    "author": "Jane Austen"
+  },
+  {
+    "id": "43",
+    "title": "Sense and Sensibility",
+    "author": "Jane Austen"
+  },
+  {
+    "id": "44",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho"
+  },
+  {
+    "id": "45",
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini"
+  },
+  {
+    "id": "46",
+    "title": "Life of Pi",
+    "author": "Yann Martel"
+  },
+  {
+    "id": "47",
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut"
+  },
+  {
+    "id": "48",
+    "title": "Beloved",
+    "author": "Toni Morrison"
+  },
+  {
+    "id": "49",
+    "title": "The Road",
+    "author": "Cormac McCarthy"
+  },
+  {
+    "id": "50",
+    "title": "The Secret Garden",
+    "author": "Frances Hodgson Burnett"
+  },
+  {
+    "id": "1749802373204",
+    "title": "Test Book",
+    "author": "Test Author"
+  }
+]
