@@ -1,6 +1,6 @@
 # 图书收藏应用
 
-这是一个全栈图书收藏应用，包含前端页面和后端 API。
+这是一个全栈图书收藏应用，包含前端页面和后端 API。主要目的是用于演示如何使用GitHub Copilot。
 
 ## 项目功能
 
@@ -63,3 +63,6 @@ BACKEND_HOST_PORT=4001 FRONTEND_HOST_PORT=5174 docker compose up --build -d
 ```bash
 docker compose down
 ```
+# 许可证
+
+本项目采用 MIT License，完整内容见仓库根目录的 [LICENSE](./LICENSE) 文件。
