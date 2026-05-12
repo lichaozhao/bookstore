@@ -2,6 +2,7 @@
 适用于需要跨 session 维护状态的长任务。
 
 ## 工作流程
+- 为当前任务设计执行计划，并写在 `docs/status.md` 里
 - 在 `docs/status.md` 维护任务状态
 - 每次任务都是先读取 `docs/status.md`，然后工作，工作完成后覆盖更新 `docs/status.md`
 - 工作中，信息不足时，把问题写进 Open Questions 再问我，不要盲改。

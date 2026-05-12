@@ -14,7 +14,7 @@ user-invocable: true
 2. L2/L3 在修改了大量代码时执行
   - Backend tests: `npm run test:backend`
 3. L4/L5 在提交PR之前执行：
-  - 调用 Skill provison-test-env 构建测试环境
+  - 调用 Skill provision-test-env 构建测试环境
   - E2E tests: `bash ./run-e2e.sh` (脚本中定义了测试日志会记录到 `logs/e2e-test.log` 文件中)
   - 执行结束后，调用 Skill teardown-test-env 销毁测试环境
 4. 在测试过程中，如果发现了问题，调用 Skill bug-fix
